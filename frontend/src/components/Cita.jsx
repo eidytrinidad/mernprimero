@@ -8,7 +8,7 @@ const Cita = ({ history, setConsulta }) => {
   const [cita, setDatos] = useState([]);
 
   const infoCita = async () => {
-    const { data } = await clienteAxios.get(`pacientes/${id}`)
+    const { data } = await clienteAxios.get(`/pacientes/${id}`)
     setDatos(data);
   };
 
